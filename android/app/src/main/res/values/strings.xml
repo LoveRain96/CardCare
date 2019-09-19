@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CardCare</string>
+    <string name="facebook_app_id">507072929867334</string>
+    <string name="fb_login_protocol_scheme">fb507072929867334</string>
+</resources>
