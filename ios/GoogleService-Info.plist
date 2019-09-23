@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>768242723090-e08rkmr6jkup2ukt5h0ls2onnpke54fr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.768242723090-e08rkmr6jkup2ukt5h0ls2onnpke54fr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBfJSBywf9sM7BYShd_HuqIc7fu_eHqMc0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>768242723090</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.CardCare</string>
+	<key>PROJECT_ID</key>
+	<string>cardcare-a1f59</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cardcare-a1f59.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:768242723090:ios:d9b56a41822da3736eebcb</string>
+	<key>DATABASE_URL</key>
+	<string>https://cardcare-a1f59.firebaseio.com</string>
+</dict>
+</plist>

@@ -6,24 +6,32 @@
  * @flow
  */
 
-import React        from 'react';
+import React          from 'react';
 import {
   StyleSheet,
-}                   from 'react-native';
-import AppNavigator from "./src/navigation/Navigation";
+}                     from 'react-native';
+import {PersistGate}  from 'redux-persist/es/integration/react';
+import {Provider}     from 'react-redux';
 
-const App = () => {
+import configureStore from './src/store/configureStore';
+import AppNavigator   from './src/navigation/Navigation';
+
+
+const {persistor, store} = configureStore();
+console.log(persistor.getState());
+const App          = () => {
   return (
-      <AppNavigator/>
+    <Provider store={store}>
+      <PersistGate
+        loading={null}
+        persistor={persistor}>
+        <AppNavigator/>
+      </PersistGate>
+    </Provider>
   );
 };
 
 const styles = StyleSheet.create({
-  hello: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 });
 
 export default App;

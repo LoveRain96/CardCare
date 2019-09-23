@@ -1,7 +1,7 @@
 import HomeScreen        from './HomeScreen';
 import Card              from './Card';
 import Help              from './Help';
-import Login             from './Login';
+import Login             from './login/Login';
 import AuthLoadingScreen from './AuthLoadingScreen';
 
 const home              = HomeScreen;

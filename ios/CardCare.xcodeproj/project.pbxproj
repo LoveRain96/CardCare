@@ -54,7 +54,7 @@
 		E763EB59233230D2008F392E /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E763EB58233230D2008F392E /* libBVLinearGradient.a */; };
 		E7AE31B8E1AE4D1F8BC887C6 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84C733A871B412DB8B235AD /* AntDesign.ttf */; };
 		E7C59C102333598200238315 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C59C0F2333598200238315 /* libRNGoogleSignin.a */; };
-		E7C59C1223335B6D00238315 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C59C1123335B6D00238315 /* GoogleService-Info.plist */; };
+		E7C59C152333797300238315 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C59C142333797300238315 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +133,7 @@
 		E763EB5323322F16008F392E /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E763EB58233230D2008F392E /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C59C0F2333598200238315 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7C59C1123335B6D00238315 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7C59C142333797300238315 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAB9C303634B4557B0EBEDF8 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -199,7 +199,7 @@
 		13B07FAE1A68108700A75B9A /* CardCare */ = {
 			isa = PBXGroup;
 			children = (
-				E7C59C1123335B6D00238315 /* GoogleService-Info.plist */,
+				E7C59C142333797300238315 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -473,7 +473,6 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				E7358AB223320F950070DF0B /* Entypo.ttf in Resources */,
 				E7358AB623320F950070DF0B /* FontAwesome5_Regular.ttf in Resources */,
-				E7C59C1223335B6D00238315 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				E7358AB023320F950070DF0B /* Feather.ttf in Resources */,
 				E7358AB323320F950070DF0B /* MaterialIcons.ttf in Resources */,
@@ -498,6 +497,7 @@
 				387BA58D9D024B86ADDC7ECF /* FontAwesome5_Regular.ttf in Resources */,
 				B05EAA8435974C9A833C7BA2 /* FontAwesome5_Solid.ttf in Resources */,
 				1E625117BDC745E58AB4B66D /* Fontisto.ttf in Resources */,
+				E7C59C152333797300238315 /* GoogleService-Info.plist in Resources */,
 				A5B8C6574C31495A912F4CFA /* Foundation.ttf in Resources */,
 				885E0D54C48E47DEB760CC91 /* Ionicons.ttf in Resources */,
 				91D94CB03ECA4CFEBB21B9B8 /* MaterialCommunityIcons.ttf in Resources */,
