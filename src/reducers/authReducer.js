@@ -1,41 +1,30 @@
 import {
-  LOGINWITHFACEBOOK,
-  LOGINWITHGMAIL,
+  LOGOUT,
   SETPROFILE,
 } from '../actions/authAction';
-import AsyncStorage from '@react-native-community/async-storage';
+import { REHYDRATE } from 'redux-persist';
 
 const INITIAL_STATE = {
-  profile: {},
-  loginWithFacebook: false,
-  loginWithGmail: false,
+  profile: null,
+  isLogin: false
 };
 
 const AuthReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case SETPROFILE:
-      if(state.loginWithFacebook) {
-        return {
-          ...state,
-          profile: action.userProfile,
-        };
-      }
+    case REHYDRATE:
       return {
         ...state,
+        ...action.payload.auth
+      };
+
+    case SETPROFILE:
+      return {
+        ...state,
+        isLogin: true,
         profile: action.userProfile,
       };
-    case LOGINWITHFACEBOOK:
-      return {
-        ...state,
-        loginWithFacebook: true,
-      };
-    case LOGINWITHGMAIL:
-      return {
-        ...state,
-        loginWithGmail: true,
-      };
-    case 'LOGOUT':
-      return {};
+    case LOGOUT:
+      return INITIAL_STATE;
     default:
       return {...state};
   }

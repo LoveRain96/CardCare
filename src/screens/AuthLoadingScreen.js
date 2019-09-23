@@ -1,17 +1,14 @@
 import React, {useEffect}                               from 'react';
 import {ActivityIndicator, StatusBar, View, StyleSheet} from 'react-native';
 import {connect}                                        from 'react-redux';
-import isEmpty                                          from 'lodash/isEmpty';
-import AsyncStorage                                     from '@react-native-community/async-storage';
 
 const AuthLoadingScreen = props => {
   useEffect(() => {
+    console.log(props);
     async function fetchData() {
       try {
-        console.log(props.profile);
-        // const a = await AsyncStorage.getItem('user');
         props.navigation.navigate(
-          'Login',
+          props.isLogin ? 'Home' : 'Login',
         );
       } catch (e) {
         console.log(e);
@@ -32,6 +29,7 @@ const mapDispatchToProps = dispatch => ({});
 const mapStateToProps = state => {
   return {
     profile: state.auth.profile,
+    isLogin: state.auth.isLogin
   };
 };
 

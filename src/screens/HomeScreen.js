@@ -3,7 +3,6 @@ import {StyleSheet, Text, View} from 'react-native';
 import ScanCard                 from '../components/ScanCard';
 
 const HomeScreen = () => {
-
   return (
     <View style={styles.container}>
       <Text>SCAN CARD</Text>

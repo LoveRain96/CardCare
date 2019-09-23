@@ -1,7 +1,5 @@
 export const SETPROFILE = 'SETPROFILE';
-export const LOGINWITHFACEBOOK = 'LOGINWITHFACEBOOK';
-export const LOGINWITHGMAIL = 'LOGINWITHGMAIL';
-
+export const LOGOUT = 'LOGOUT';
 export function setProfile(userProfile) {
   return {
     type: SETPROFILE,
@@ -9,16 +7,8 @@ export function setProfile(userProfile) {
   };
 }
 
-export function loginWithFacebook() {
-  console.log('render1');
-  return {
-    type: LOGINWITHFACEBOOK
-  }
-}
-
-export function loginWithGmail() {
-  console.log('render2');
-  return {
-    type: LOGINWITHGMAIL
+export function logOut() {
+  return{
+    type :LOGOUT
   }
 }

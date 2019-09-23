@@ -18,7 +18,6 @@ import AppNavigator   from './src/navigation/Navigation';
 
 
 const {persistor, store} = configureStore();
-console.log(persistor.getState());
 const App          = () => {
   return (
     <Provider store={store}>

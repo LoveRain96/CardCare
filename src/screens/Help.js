@@ -1,27 +1,20 @@
 import React, {useCallback} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import AsyncStorage from '@react-native-community/async-storage';
-import {GoogleSignin} from 'react-native-google-signin';
 import {connect} from 'react-redux';
-
+import {logOut} from '../actions/authAction';
+import {GoogleSignin} from 'react-native-google-signin';
 function Help(props) {
   const handleLogout = useCallback(async () => {
-    console.log(props);
-    if(props.loginWith){
-      // await AsyncStorage.clear();
-      // props.navigation.navigate('Login');
-    }
-
+    props.logOut();
+    //Gmail logout
+    await GoogleSignin.revokeAccess();
+    await GoogleSignin.signOut();
+    props.navigation.navigate('Login');
   }, []);
 
-  const handleLogoutGoogle = useCallback(async () => {
-    try {
-      await GoogleSignin.revokeAccess();
-      await GoogleSignin.signOut();
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
+  //GMail
+  // await GoogleSignin.revokeAccess();
+  // await GoogleSignin.signOut();
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.logOutButton} onPress={handleLogout}>
@@ -30,17 +23,21 @@ function Help(props) {
     </View>
   );
 }
+
 const mapStateToProps = state => {
-  console.log(state);
+  return {};
+};
+
+const mapDispatchToProps = dispatch => {
   return {
-    loginWith: state.auth.loginWithFacebook
-      ? state.auth.loginWithFacebook
-      : state.auth.loginWithGmail,
+    logOut: () => {
+      dispatch(logOut());
+    },
   };
 };
 export default connect(
   mapStateToProps,
-  null,
+  mapDispatchToProps,
 )(Help);
 
 const styles = StyleSheet.create({

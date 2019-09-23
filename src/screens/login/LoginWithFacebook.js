@@ -3,21 +3,28 @@ import {Text} from 'react-native-elements';
 import {View} from 'react-native';
 import {Button} from '../../components/Button';
 import {AccessToken, LoginManager} from 'react-native-fbsdk';
-import AsyncStorage from '@react-native-community/async-storage';
 import {connect} from 'react-redux';
-import {loginWithFacebook, setProfile} from '../../actions/authAction';
+import {setProfile} from '../../actions/authAction';
+import firebase from 'react-native-firebase';
 
 const LoginWithFacebook = props => {
   const handleClick = useCallback(async () => {
-    props.loginWith();
-    const login = await LoginManager.logInWithPermissions(['public_profile']);
-    if (login.isCancelled) {
-    } else {
-      let token = await AccessToken.getCurrentAccessToken();
-      // await AsyncStorage.setItem('user', token.accessToken.toString());
-      props.profile(token.accessToken.toString());
-      props.navigation.navigate('Home');
+    try{
+      const login = await LoginManager.logInWithPermissions(['public_profile']);
+      if (login.isCancelled) {
+      } else {
+        let token = await AccessToken.getCurrentAccessToken();
+        props.profile(token.accessToken);
+        const credential = firebase.auth.FacebookAuthProvider.credential(token.accessToken);
+        const firebaseUserCredential = await firebase.auth().signInWithCredential(credential);
+        let profile =JSON.stringify(firebaseUserCredential.user.toJSON());
+        props.profile(profile);
+        props.navigation.navigate('Home');
+      }
+    } catch (e) {
+      console.log(e);
     }
+
   }, []);
   return (
     <View>
@@ -37,9 +44,6 @@ const LoginWithFacebook = props => {
 const mapDispatchToProps = dispatch => ({
   profile: profile => {
     dispatch(setProfile(profile));
-  },
-  loginWith: () => {
-    dispatch(loginWithFacebook());
   },
 });
 

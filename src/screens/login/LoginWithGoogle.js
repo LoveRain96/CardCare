@@ -2,15 +2,15 @@ import {
   GoogleSignin,
   statusCodes,
   GoogleSigninButton,
-}                                   from 'react-native-google-signin';
-import React, {useCallback}         from 'react';
-import {connect}                    from 'react-redux';
-import {loginWithGmail, setProfile} from '../../actions/authAction';
-import AsyncStorage                 from '@react-native-community/async-storage';
+} from 'react-native-google-signin';
+import React, {useCallback} from 'react';
+import {connect} from 'react-redux';
+import firebase from 'react-native-firebase';
+
+import {setProfile} from '../../actions/authAction';
 
 function LoginWithGoogle(props) {
   const signIn = useCallback(async () => {
-    props.loginWith();
     try {
       await GoogleSignin.configure({
         iosClientId:
@@ -25,8 +25,11 @@ function LoginWithGoogle(props) {
       });
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
-      // await AsyncStorage.setItem('user', userInfo);
-      props.profile(userInfo);
+      const credential = firebase.auth.GoogleAuthProvider.credential(userInfo.idToken, userInfo.accessToken);
+      const firebaseUserCredential = await firebase.auth().signInWithCredential(credential);
+
+      let profile = JSON.stringify(firebaseUserCredential.user.toJSON());
+      props.profile(profile);
       props.navigation.navigate('Home');
     } catch (error) {
       props.navigation.navigate('Login');
@@ -55,16 +58,12 @@ function LoginWithGoogle(props) {
 }
 
 const mapDispatchToProps = dispatch => ({
-  profile: (profile) => {
+  profile: profile => {
     dispatch(setProfile(profile));
   },
-  loginWith : ()=> {
-    dispatch(loginWithGmail())
-  }
 });
 
 const mapStateToProps = state => {
-  console.log(state);
   return {};
 };
 
