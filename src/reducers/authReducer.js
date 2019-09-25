@@ -1,8 +1,8 @@
+import { REHYDRATE } from 'redux-persist';
 import {
   LOGOUT,
   SETPROFILE,
 } from '../actions/authAction';
-import { REHYDRATE } from 'redux-persist';
 
 const INITIAL_STATE = {
   profile: null,
@@ -12,6 +12,9 @@ const INITIAL_STATE = {
 const AuthReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case REHYDRATE:
+      if (!action.payload) {
+        return state;
+      }
       return {
         ...state,
         ...action.payload.auth
@@ -26,7 +29,7 @@ const AuthReducer = (state = INITIAL_STATE, action) => {
     case LOGOUT:
       return INITIAL_STATE;
     default:
-      return {...state};
+      return state;
   }
 };
 

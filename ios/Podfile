@@ -59,13 +59,3 @@ target 'CardCare' do
 
   use_native_modules!
 end
-
-target 'CardCare-tvOS' do
-  # Pods for CardCare-tvOS
-
-  target 'CardCare-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
