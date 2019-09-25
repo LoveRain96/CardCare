@@ -20,15 +20,15 @@
 		387BA58D9D024B86ADDC7ECF /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86D51BA7A0C44781881F56F5 /* FontAwesome5_Regular.ttf */; };
 		39A35CA2D2AD4B44A7775D49 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42DE1FD897904A869FA2925A /* Octicons.ttf */; };
 		4800F36773B14ACAAF046E64 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68DF331B9EA844A2B5F9494F /* FontAwesome.ttf */; };
+		62B73CE9458F32041248E3E1 /* libPods-CardCareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A65255A122B06BEB4E76526 /* libPods-CardCareTests.a */; };
 		7321942EBAE84B769842FEF1 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BC3F3C5B4EC4F969E6C38B2 /* FontAwesome5_Brands.ttf */; };
 		88242DF3247D488D9F4E000F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1B2F1DD2BA741A58B5D990F /* EvilIcons.ttf */; };
 		885E0D54C48E47DEB760CC91 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5125BD0F652C43729C60B21D /* Ionicons.ttf */; };
-		899F9C0E76D23691F17890EA /* libPods-CardCareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 393AEED8B4D8400E7D0C7382 /* libPods-CardCareTests.a */; };
 		91D94CB03ECA4CFEBB21B9B8 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1865597961CF4A5FA15E0A9D /* MaterialCommunityIcons.ttf */; };
 		A5B8C6574C31495A912F4CFA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE76B63FB04F32A7FBF352 /* Foundation.ttf */; };
 		A86A588505864B8CA8B902D7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0070D2E49B14235A0DBE2A3 /* SimpleLineIcons.ttf */; };
 		B05EAA8435974C9A833C7BA2 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30A9B5415C7941FABEB2ECDB /* FontAwesome5_Solid.ttf */; };
-		E627C9B64A58C73E48EA7518 /* libPods-CardCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6B7F4F061467B511CAEFB8 /* libPods-CardCare.a */; };
+		E31B3A30124A4ACE3429F7BC /* libPods-CardCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E84D21550DD743D9797CFA /* libPods-CardCare.a */; };
 		E7358AA923320F950070DF0B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358A9923320F950070DF0B /* FontAwesome.ttf */; };
 		E7358AAA23320F950070DF0B /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358A9A23320F950070DF0B /* MaterialCommunityIcons.ttf */; };
 		E7358AAB23320F950070DF0B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358A9B23320F950070DF0B /* FontAwesome5_Brands.ttf */; };
@@ -45,7 +45,7 @@
 		E7358AB623320F950070DF0B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358AA623320F950070DF0B /* FontAwesome5_Regular.ttf */; };
 		E7358AB723320F950070DF0B /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358AA723320F950070DF0B /* Foundation.ttf */; };
 		E7358AB823320F950070DF0B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7358AA823320F950070DF0B /* Octicons.ttf */; };
-		E763EB59233230D2008F392E /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E763EB58233230D2008F392E /* libBVLinearGradient.a */; };
+		E763EB59233230D2008F392E /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E763EB58233230D2008F392E /* libBVLinearGradient.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E7AE31B8E1AE4D1F8BC887C6 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84C733A871B412DB8B235AD /* AntDesign.ttf */; };
 		E7C59C102333598200238315 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C59C0F2333598200238315 /* libRNGoogleSignin.a */; };
 		E7C59C152333797300238315 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C59C142333797300238315 /* GoogleService-Info.plist */; };
@@ -66,6 +66,7 @@
 		00E356EE1AD99517003FC87E /* CardCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CardCareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCareTests.m; sourceTree = "<group>"; };
+		0DCFAF76210C9289BEB7F290 /* Pods-CardCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.release.xcconfig"; path = "Target Support Files/Pods-CardCare/Pods-CardCare.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CardCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CardCare/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CardCare/AppDelegate.m; sourceTree = "<group>"; };
@@ -73,39 +74,27 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CardCare/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CardCare/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CardCare/main.m; sourceTree = "<group>"; };
+		16E84D21550DD743D9797CFA /* libPods-CardCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1865597961CF4A5FA15E0A9D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		29F1799DB2AA722901750674 /* libPods-CardCare-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCare-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DF7CDE60C1F685C7567868 /* Pods-CardCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.release.xcconfig"; path = "Target Support Files/Pods-CardCareTests/Pods-CardCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		2905844C760B9006CE849BA9 /* Pods-CardCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.debug.xcconfig"; path = "Target Support Files/Pods-CardCareTests/Pods-CardCareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BC3F3C5B4EC4F969E6C38B2 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		2BFE76B63FB04F32A7FBF352 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		2CB45CC55B7E76196387D0A2 /* Pods-CardCare-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare-tvOS/Pods-CardCare-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		30A9B5415C7941FABEB2ECDB /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		393AEED8B4D8400E7D0C7382 /* libPods-CardCareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DE1FD897904A869FA2925A /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		4684ED4EE6EBD7A21D8D37C1 /* Pods-CardCare-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CardCare-tvOS/Pods-CardCare-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4C3C1B8C8564363C05DA8D6B /* Pods-CardCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.debug.xcconfig"; path = "Target Support Files/Pods-CardCare/Pods-CardCare.debug.xcconfig"; sourceTree = "<group>"; };
 		5125BD0F652C43729C60B21D /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		5E6B7F4F061467B511CAEFB8 /* libPods-CardCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		684D6CA3E3751C2A781CA725 /* Pods-CardCare-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CardCare-tvOSTests/Pods-CardCare-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		68DF331B9EA844A2B5F9494F /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		71BC01131F004F8DA560A688 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		758FEA130DC821C83DC12B6B /* libPods-CardCare-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCare-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1E5D378182435CA1A8E55D /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		86D51BA7A0C44781881F56F5 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		8758729AED836E3416F0BFBB /* Pods-CardCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.debug.xcconfig"; path = "Target Support Files/Pods-CardCareTests/Pods-CardCareTests.debug.xcconfig"; sourceTree = "<group>"; };
-		96942F054D4EBBBFC0763CED /* Pods-CardCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCareTests/Pods-CardCareTests.debug.xcconfig"; sourceTree = "<group>"; };
-		98112F5BD90B6ADF1515EBDC /* Pods-CardCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.release.xcconfig"; path = "Target Support Files/Pods-CardCareTests/Pods-CardCareTests.release.xcconfig"; sourceTree = "<group>"; };
 		9911BAFB891F49E5AD83DA0D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		A71E32427E194C0D6E33B481 /* Pods-CardCare-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CardCare-tvOSTests/Pods-CardCare-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB456002228BC1065DF71200 /* Pods-CardCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare/Pods-CardCare.debug.xcconfig"; sourceTree = "<group>"; };
+		9A65255A122B06BEB4E76526 /* libPods-CardCareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardCareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1296A92D653477E8CCEE9D6 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		C7A46AFE5C981636B5F1A148 /* Pods-CardCare-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare-tvOS/Pods-CardCare-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		CBDDC98CA721DDE507EC28BD /* Pods-CardCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare/Pods-CardCare.release.xcconfig"; sourceTree = "<group>"; };
 		D0070D2E49B14235A0DBE2A3 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		D1B2F1DD2BA741A58B5D990F /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		D1B6B07E709E4C8F1B45FEF2 /* Pods-CardCare-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare-tvOSTests/Pods-CardCare-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D2C5408D9909F0D52FCFDBFC /* Pods-CardCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.debug.xcconfig"; path = "Target Support Files/Pods-CardCare/Pods-CardCare.debug.xcconfig"; sourceTree = "<group>"; };
-		D4067457F28625388A2CFC63 /* Pods-CardCare-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCare-tvOSTests/Pods-CardCare-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D64E6555A721BDE3BC4557DA /* Pods-CardCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCareTests/Pods-CardCareTests.release.xcconfig"; sourceTree = "<group>"; };
 		D84C733A871B412DB8B235AD /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		E70440E1233B71980015264B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E7358A9923320F950070DF0B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		E7358A9A23320F950070DF0B /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
 		E7358A9B23320F950070DF0B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
@@ -130,8 +119,6 @@
 		EAB9C303634B4557B0EBEDF8 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0F9B1636BCCBCD085B72B36 /* Pods-CardCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare.release.xcconfig"; path = "Target Support Files/Pods-CardCare/Pods-CardCare.release.xcconfig"; sourceTree = "<group>"; };
-		FF9844F478E9B619666D6019 /* Pods-CardCare-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCare-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CardCare-tvOS/Pods-CardCare-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899F9C0E76D23691F17890EA /* libPods-CardCareTests.a in Frameworks */,
+				62B73CE9458F32041248E3E1 /* libPods-CardCareTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +136,7 @@
 			files = (
 				E7C59C102333598200238315 /* libRNGoogleSignin.a in Frameworks */,
 				E763EB59233230D2008F392E /* libBVLinearGradient.a in Frameworks */,
-				E627C9B64A58C73E48EA7518 /* libPods-CardCare.a in Frameworks */,
+				E31B3A30124A4ACE3429F7BC /* libPods-CardCare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,10 +184,8 @@
 				E7358AB9233212BE0070DF0B /* libBVLinearGradient.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5E6B7F4F061467B511CAEFB8 /* libPods-CardCare.a */,
-				758FEA130DC821C83DC12B6B /* libPods-CardCare-tvOS.a */,
-				29F1799DB2AA722901750674 /* libPods-CardCare-tvOSTests.a */,
-				393AEED8B4D8400E7D0C7382 /* libPods-CardCareTests.a */,
+				16E84D21550DD743D9797CFA /* libPods-CardCare.a */,
+				9A65255A122B06BEB4E76526 /* libPods-CardCareTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +200,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E70440E1233B71980015264B /* Config.xcconfig */,
 				E7358A9823320BEB0070DF0B /* Fonts */,
 				13B07FAE1A68108700A75B9A /* CardCare */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -241,22 +227,10 @@
 		DE809074BCB73A41E500DA47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2C5408D9909F0D52FCFDBFC /* Pods-CardCare.debug.xcconfig */,
-				F0F9B1636BCCBCD085B72B36 /* Pods-CardCare.release.xcconfig */,
-				FF9844F478E9B619666D6019 /* Pods-CardCare-tvOS.debug.xcconfig */,
-				4684ED4EE6EBD7A21D8D37C1 /* Pods-CardCare-tvOS.release.xcconfig */,
-				A71E32427E194C0D6E33B481 /* Pods-CardCare-tvOSTests.debug.xcconfig */,
-				684D6CA3E3751C2A781CA725 /* Pods-CardCare-tvOSTests.release.xcconfig */,
-				8758729AED836E3416F0BFBB /* Pods-CardCareTests.debug.xcconfig */,
-				98112F5BD90B6ADF1515EBDC /* Pods-CardCareTests.release.xcconfig */,
-				AB456002228BC1065DF71200 /* Pods-CardCare.debug.xcconfig */,
-				CBDDC98CA721DDE507EC28BD /* Pods-CardCare.release.xcconfig */,
-				2CB45CC55B7E76196387D0A2 /* Pods-CardCare-tvOS.debug.xcconfig */,
-				C7A46AFE5C981636B5F1A148 /* Pods-CardCare-tvOS.release.xcconfig */,
-				D1B6B07E709E4C8F1B45FEF2 /* Pods-CardCare-tvOSTests.debug.xcconfig */,
-				D4067457F28625388A2CFC63 /* Pods-CardCare-tvOSTests.release.xcconfig */,
-				96942F054D4EBBBFC0763CED /* Pods-CardCareTests.debug.xcconfig */,
-				D64E6555A721BDE3BC4557DA /* Pods-CardCareTests.release.xcconfig */,
+				4C3C1B8C8564363C05DA8D6B /* Pods-CardCare.debug.xcconfig */,
+				0DCFAF76210C9289BEB7F290 /* Pods-CardCare.release.xcconfig */,
+				2905844C760B9006CE849BA9 /* Pods-CardCareTests.debug.xcconfig */,
+				26DF7CDE60C1F685C7567868 /* Pods-CardCareTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -315,7 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CardCareTests" */;
 			buildPhases = (
-				1CC3E15B8E4EDB8B8A5991F3 /* [CP] Check Pods Manifest.lock */,
+				3E8F13600C4D4F7A304C6EA3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -334,13 +308,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CardCare" */;
 			buildPhases = (
-				994706B40E3964F97BBC1CAD /* [CP] Check Pods Manifest.lock */,
+				7ECC63F7B6E3CDAF0C0C8684 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				AC2919C57F1EFABCB450D189 /* [CP] Copy Pods Resources */,
+				C056D2B7DACAB297E20ADEEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,7 +340,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 2MN97WAWLU;
+						DevelopmentTeam = AFV4XX3RP8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -458,7 +432,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1CC3E15B8E4EDB8B8A5991F3 /* [CP] Check Pods Manifest.lock */ = {
+		3E8F13600C4D4F7A304C6EA3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,7 +454,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		994706B40E3964F97BBC1CAD /* [CP] Check Pods Manifest.lock */ = {
+		7ECC63F7B6E3CDAF0C0C8684 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,7 +476,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC2919C57F1EFABCB450D189 /* [CP] Copy Pods Resources */ = {
+		C056D2B7DACAB297E20ADEEB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -620,7 +594,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8758729AED836E3416F0BFBB /* Pods-CardCareTests.debug.xcconfig */;
+			baseConfigurationReference = 2905844C760B9006CE849BA9 /* Pods-CardCareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2MN97WAWLU;
@@ -645,7 +619,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98112F5BD90B6ADF1515EBDC /* Pods-CardCareTests.release.xcconfig */;
+			baseConfigurationReference = 26DF7CDE60C1F685C7567868 /* Pods-CardCareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -667,14 +641,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C5408D9909F0D52FCFDBFC /* Pods-CardCare.debug.xcconfig */;
+			baseConfigurationReference = 4C3C1B8C8564363C05DA8D6B /* Pods-CardCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 2MN97WAWLU;
+				DEVELOPMENT_TEAM = AFV4XX3RP8;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CardCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -683,7 +657,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.company.CardCare1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.CardCare;
 				PRODUCT_NAME = CardCare;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -692,13 +666,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F9B1636BCCBCD085B72B36 /* Pods-CardCare.release.xcconfig */;
+			baseConfigurationReference = 0DCFAF76210C9289BEB7F290 /* Pods-CardCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2MN97WAWLU;
+				DEVELOPMENT_TEAM = AFV4XX3RP8;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CardCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -707,7 +681,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.company.CardCare1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.CardCare;
 				PRODUCT_NAME = CardCare;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -716,6 +690,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70440E1233B71980015264B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -769,6 +744,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70440E1233B71980015264B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

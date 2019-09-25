@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  CardCare
+//
+//  Created by 丁进德 on 9/25/19.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include? "tmp.xcconfig"

@@ -60,3 +60,7 @@ buck-out/
 
 package-lock.json
 .env
+
+# react-native-config codegen
+ios/tmp.xcconfig
+

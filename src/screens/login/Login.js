@@ -5,7 +5,7 @@ import {getBottomSpace} from 'react-native-iphone-x-helper';
 
 import LoginWithGoogle from './LoginWithGoogle';
 import LoginWithFacebook from './LoginWithFacebook';
-import images from '../../constants/images';
+import Images from '../../constants/Images';
 import {connect} from 'react-redux';
 import {setProfile} from '../../actions/authAction';
 
@@ -27,7 +27,7 @@ function Login(props) {
       <View style={styles.header}>
         <Image
           style={{width: width / 1.1, height: width / 1.1}}
-          source={images.Logo}
+          source={Images.Logo}
         />
         <LoginWithFacebook onPressLogin={onLogin} onFail={onFail} />
         <LoginWithGoogle onPressLogin={onLogin} onFail={onFail} />
