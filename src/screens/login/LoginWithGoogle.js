@@ -7,6 +7,9 @@ import {Button} from '../../components/Button';
 function LoginWithGoogle(props) {
   const signIn = useCallback(async () => {
     try {
+      //Sign out when existed account
+      await GoogleSignin.signOut();
+      //
       await GoogleSignin.configure({
         iosClientId:
           '768242723090-e08rkmr6jkup2ukt5h0ls2onnpke54fr.apps.googleusercontent.com',
@@ -31,6 +34,7 @@ function LoginWithGoogle(props) {
       let profile = JSON.stringify(firebaseUserCredential.user.toJSON());
       props.onPressLogin(profile);
     } catch (error) {
+      props.onFail(e);
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         // user cancelled the login flow
       } else if (error.code === statusCodes.IN_PROGRESS) {
