@@ -6,7 +6,7 @@ function Help(props) {
   const handleLogout = useCallback(async () => {
     props.logOut();
     props.navigation.navigate('Login');
-  }, []);
+  }, [props]);
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.logOutButton} onPress={handleLogout}>
