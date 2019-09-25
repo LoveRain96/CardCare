@@ -4,7 +4,6 @@ import {connect}                                        from 'react-redux';
 
 const AuthLoadingScreen = props => {
   useEffect(() => {
-    console.log(props);
     async function fetchData() {
       try {
         props.navigation.navigate(

@@ -28,7 +28,6 @@ const LoginWithFacebook = props => {
   }, []);
   return (
     <View>
-      <Text style={{color: '#fff', fontSize: 28}}>CARD CARE</Text>
       <View style={{backgroundColor: '#4267b2'}}>
         <Button
           styleIcon={{paddingRight: 15}}

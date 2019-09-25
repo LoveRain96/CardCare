@@ -2,12 +2,13 @@ import {
   GoogleSignin,
   statusCodes,
   GoogleSigninButton,
-} from 'react-native-google-signin';
+}                           from 'react-native-google-signin';
 import React, {useCallback} from 'react';
-import {connect} from 'react-redux';
-import firebase from 'react-native-firebase';
+import {connect}            from 'react-redux';
+import firebase             from 'react-native-firebase';
 
 import {setProfile} from '../../actions/authAction';
+import {View}       from 'react-native';
 
 function LoginWithGoogle(props) {
   const signIn = useCallback(async () => {
@@ -24,8 +25,8 @@ function LoginWithGoogle(props) {
         accountName: '', // [Android] specifies an account name on the device that should be used
       });
       await GoogleSignin.hasPlayServices();
-      const userInfo = await GoogleSignin.signIn();
-      const credential = firebase.auth.GoogleAuthProvider.credential(userInfo.idToken, userInfo.accessToken);
+      const userInfo               = await GoogleSignin.signIn();
+      const credential             = firebase.auth.GoogleAuthProvider.credential(userInfo.idToken, userInfo.accessToken);
       const firebaseUserCredential = await firebase.auth().signInWithCredential(credential);
 
       let profile = JSON.stringify(firebaseUserCredential.user.toJSON());

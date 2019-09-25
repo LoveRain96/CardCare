@@ -36,9 +36,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     buttonText: {
         fontSize: 18,
-        fontFamily: 'Gill Sans',
         textAlign: 'center',
         margin: 10,
         color: '#ffffff',
