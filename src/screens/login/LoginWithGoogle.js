@@ -1,7 +1,4 @@
-import {
-  GoogleSignin,
-  statusCodes,
-} from 'react-native-google-signin';
+import {GoogleSignin, statusCodes} from 'react-native-google-signin';
 import React, {useCallback} from 'react';
 import firebase from 'react-native-firebase';
 
@@ -44,7 +41,7 @@ function LoginWithGoogle(props) {
         // some other error happened
       }
     }
-  }, []);
+  }, [props]);
 
   return (
     <Button

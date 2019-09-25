@@ -9,6 +9,6 @@ export function setProfile(userProfile) {
 
 export function logOut() {
   return {
-    type: LOGOUT
+    type: LOGOUT,
   };
 }

@@ -12,10 +12,13 @@ import {setProfile} from '../../actions/authAction';
 const {width} = Dimensions.get('window');
 
 function Login(props) {
-  const onLogin = useCallback(profile => {
-    props.profile(profile);
-    props.navigation.navigate('Home');
-  }, []);
+  const onLogin = useCallback(
+    profile => {
+      props.profile(profile);
+      props.navigation.navigate('Home');
+    },
+    [props],
+  );
   return (
     <View style={styles.body}>
       <View style={styles.header}>

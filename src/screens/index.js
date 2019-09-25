@@ -1,19 +1,13 @@
-import HomeScreen        from './HomeScreen';
-import Card              from './Card';
-import Help              from './Help';
-import Login             from './login/Login';
+import HomeScreen from './HomeScreen';
+import Card from './Card';
+import Help from './Help';
+import Login from './login/Login';
 import AuthLoadingScreen from './AuthLoadingScreen';
 
-const home              = HomeScreen;
-const card              = Card;
-const help              = Help;
-const login             = Login;
+const home = HomeScreen;
+const card = Card;
+const help = Help;
+const login = Login;
 const authLoadingScreen = AuthLoadingScreen;
 
-export {
-  home,
-  card,
-  help,
-  login,
-  authLoadingScreen
-};
+export {home, card, help, login, authLoadingScreen};

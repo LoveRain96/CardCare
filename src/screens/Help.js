@@ -10,7 +10,7 @@ function Help(props) {
     await GoogleSignin.revokeAccess();
     await GoogleSignin.signOut();
     props.navigation.navigate('Login');
-  }, []);
+  }, [props]);
 
   //GMail
   // await GoogleSignin.revokeAccess();

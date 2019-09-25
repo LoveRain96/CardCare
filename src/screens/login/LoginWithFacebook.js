@@ -23,7 +23,7 @@ const LoginWithFacebook = props => {
     } catch (e) {
       console.log(e);
     }
-  }, []);
+  }, [props]);
   return (
     <Button
       containerStyle={{backgroundColor: '#4267b2'}}

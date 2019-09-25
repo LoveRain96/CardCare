@@ -1,20 +1,18 @@
-import React, {useEffect}                               from 'react';
+import React, {useEffect} from 'react';
 import {ActivityIndicator, StatusBar, View, StyleSheet} from 'react-native';
-import {connect}                                        from 'react-redux';
+import {connect} from 'react-redux';
 
 const AuthLoadingScreen = props => {
   useEffect(() => {
     async function fetchData() {
       try {
-        props.navigation.navigate(
-          props.isLogin ? 'Home' : 'Login',
-        );
+        props.navigation.navigate(props.isLogin ? 'Home' : 'Login');
       } catch (e) {
         console.log(e);
       }
     }
     fetchData();
-  }, []);
+  }, [props.isLogin, props.navigation]);
   return (
     <View style={styles.container}>
       <ActivityIndicator />
@@ -28,7 +26,7 @@ const mapDispatchToProps = dispatch => ({});
 const mapStateToProps = state => {
   return {
     profile: state.auth.profile,
-    isLogin: state.auth.isLogin
+    isLogin: state.auth.isLogin,
   };
 };
 
