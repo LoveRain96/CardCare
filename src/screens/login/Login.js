@@ -16,6 +16,9 @@ function Login(props) {
     props.profile(profile);
     props.navigation.navigate('Home');
   }, []);
+  const onFail = useCallback(error => {
+    console.log(error);
+  }, []);
   return (
     <View style={styles.body}>
       <View style={styles.header}>
@@ -23,8 +26,8 @@ function Login(props) {
           style={{width: width / 1.1, height: width / 1.1}}
           source={images.Logo}
         />
-        <LoginWithFacebook onPressLogin={onLogin} />
-        <LoginWithGoogle onPressLogin={onLogin} />
+        <LoginWithFacebook onPressLogin={onLogin} onFail={onFail} />
+        <LoginWithGoogle onPressLogin={onLogin} onFail={onFail} />
       </View>
       <View style={styles.bottom}>
         <Text>Copyright@ by </Text>

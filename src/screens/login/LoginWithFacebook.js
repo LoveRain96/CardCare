@@ -10,7 +10,6 @@ const LoginWithFacebook = props => {
       if (login.isCancelled) {
       } else {
         let token = await AccessToken.getCurrentAccessToken();
-        props.profile(token.accessToken);
         const credential = firebase.auth.FacebookAuthProvider.credential(
           token.accessToken,
         );
@@ -21,7 +20,7 @@ const LoginWithFacebook = props => {
         props.onPressLogin(profile);
       }
     } catch (e) {
-      console.log(e);
+      props.onFail(e);
     }
   }, []);
   return (

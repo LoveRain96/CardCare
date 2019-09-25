@@ -2,19 +2,11 @@ import React, {useCallback} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {connect} from 'react-redux';
 import {logOut} from '../actions/authAction';
-import {GoogleSignin} from 'react-native-google-signin';
 function Help(props) {
   const handleLogout = useCallback(async () => {
     props.logOut();
-    //Gmail logout
-    await GoogleSignin.revokeAccess();
-    await GoogleSignin.signOut();
     props.navigation.navigate('Login');
   }, []);
-
-  //GMail
-  // await GoogleSignin.revokeAccess();
-  // await GoogleSignin.signOut();
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.logOutButton} onPress={handleLogout}>
