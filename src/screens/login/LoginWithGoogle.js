@@ -1,14 +1,11 @@
 import {
   GoogleSignin,
   statusCodes,
-  GoogleSigninButton,
-}                           from 'react-native-google-signin';
+} from 'react-native-google-signin';
 import React, {useCallback} from 'react';
-import {connect}            from 'react-redux';
-import firebase             from 'react-native-firebase';
+import firebase from 'react-native-firebase';
 
-import {setProfile} from '../../actions/authAction';
-import {View}       from 'react-native';
+import {Button} from '../../components/Button';
 
 function LoginWithGoogle(props) {
   const signIn = useCallback(async () => {
@@ -25,16 +22,18 @@ function LoginWithGoogle(props) {
         accountName: '', // [Android] specifies an account name on the device that should be used
       });
       await GoogleSignin.hasPlayServices();
-      const userInfo               = await GoogleSignin.signIn();
-      const credential             = firebase.auth.GoogleAuthProvider.credential(userInfo.idToken, userInfo.accessToken);
-      const firebaseUserCredential = await firebase.auth().signInWithCredential(credential);
+      const userInfo = await GoogleSignin.signIn();
+      const credential = firebase.auth.GoogleAuthProvider.credential(
+        userInfo.idToken,
+        userInfo.accessToken,
+      );
+      const firebaseUserCredential = await firebase
+        .auth()
+        .signInWithCredential(credential);
 
       let profile = JSON.stringify(firebaseUserCredential.user.toJSON());
-      props.profile(profile);
-      props.navigation.navigate('Home');
+      props.onPressLogin(profile);
     } catch (error) {
-      props.navigation.navigate('Login');
-      console.log(error);
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         // user cancelled the login flow
       } else if (error.code === statusCodes.IN_PROGRESS) {
@@ -48,27 +47,14 @@ function LoginWithGoogle(props) {
   }, []);
 
   return (
-    <GoogleSigninButton
-      style={{width: 192, height: 48}}
-      size={GoogleSigninButton.Size.Wide}
-      color={GoogleSigninButton.Color.Dark}
+    <Button
+      containerStyle={{backgroundColor: 'rgb(81, 134, 236)'}}
+      iconName={'google'}
       onPress={signIn}
-      disabled={false}
+      textStyle={{color: '#fff'}}
+      text={'Sign in with Google'}
     />
   );
 }
 
-const mapDispatchToProps = dispatch => ({
-  profile: profile => {
-    dispatch(setProfile(profile));
-  },
-});
-
-const mapStateToProps = state => {
-  return {};
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(LoginWithGoogle);
+export default LoginWithGoogle;

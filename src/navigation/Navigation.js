@@ -7,6 +7,9 @@ import {card, help, home, login, authLoadingScreen}                   from '../s
 const LoginNavigator  = createStackNavigator({
   Login: {
     screen: login,
+    navigationOptions: {
+      header: null
+    }
   },
 });
 const ScreenNavigator = createBottomTabNavigator(
