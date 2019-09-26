@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import {StyleSheet} from 'react-native';
 import {PersistGate} from 'redux-persist/es/integration/react';
 import {Provider} from 'react-redux';
 
