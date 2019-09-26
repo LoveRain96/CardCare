@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb__RN_CONFIG_FACEBOOK_APP_ID</string>
+				<string>__RN_CONFIG_FACEBOOK_APP_ID_PREFIX</string>
 			</array>
 		</dict>
 		<dict>
