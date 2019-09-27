@@ -17,7 +17,6 @@
     "lodash": "^4.17.15",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-awesome-card-io": "^0.8.2",
     "react-native-config": "^0.11.7",
     "react-native-elements": "^1.2.0",
     "react-native-fbsdk": "^1.0.3",

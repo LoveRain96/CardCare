@@ -3,6 +3,9 @@ import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createStackNavigator} from 'react-navigation-stack';
 import {card, help, home, login, authLoadingScreen} from '../screens';
+import {StyleSheet} from 'react-native';
+import Ionicons from 'react-native-vector-icons/FontAwesome';
+import IconEntypo from 'react-native-vector-icons/Entypo';
 
 const LoginNavigator = createStackNavigator({
   Login: {
@@ -12,17 +15,39 @@ const LoginNavigator = createStackNavigator({
     },
   },
 });
-const ScreenNavigator = createBottomTabNavigator({
-  Home: {
-    screen: home,
+const ScreenNavigator = createBottomTabNavigator(
+  {
+    Home: {
+      screen: home,
+    },
+    Card: {
+      screen: card,
+    },
+    Help: {
+      screen: help,
+    },
   },
-  Card: {
-    screen: card,
+  {
+    defaultNavigationOptions: ({navigation}) => ({
+      tabBarIcon: ({focused, horizontal, tintColor}) => {
+        const {routeName} = navigation.state;
+        let IconComponent = Ionicons;
+        let Icon = IconEntypo;
+        if (routeName === 'Home') {
+          return <IconComponent name={'home'} size={25} color={tintColor} />;
+        } else if (routeName === 'Card') {
+          return <IconComponent name={'vcard'} size={25} color={tintColor} />;
+        } else {
+          return <Icon name={'help'} size={25} color={tintColor} />;
+        }
+      },
+    }),
+    tabBarOptions: {
+      activeTintColor: 'tomato',
+      inactiveTintColor: 'gray',
+    },
   },
-  Help: {
-    screen: help,
-  },
-});
+);
 
 const AppNavigator = createSwitchNavigator(
   {
@@ -36,3 +61,7 @@ const AppNavigator = createSwitchNavigator(
 );
 
 export default createAppContainer(AppNavigator);
+
+const styles = StyleSheet.create({
+  icon: {},
+});
