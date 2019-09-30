@@ -1,5 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import HeaderLeft from '../components/HeaderLeft';
+import InputSearch from '../components/InputSearch';
 
 const HomeScreen = () => {
   return (
@@ -7,6 +9,11 @@ const HomeScreen = () => {
       <Text>SCAN CARD</Text>
     </View>
   );
+};
+
+HomeScreen.navigationOptions = {
+  headerLeft: <HeaderLeft text={'Card Care'} />,
+  headerRight: <InputSearch />,
 };
 export default HomeScreen;
 

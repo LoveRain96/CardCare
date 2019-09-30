@@ -15,7 +15,9 @@ function Help(props) {
     </View>
   );
 }
-
+Help.navigationOptions = {
+  title: 'Card Care',
+};
 const mapStateToProps = state => {
   return {};
 };
