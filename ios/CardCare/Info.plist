@@ -6,6 +6,8 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>__RN_CONFIG_APP_NAME</string>
+	<key>NSCameraUsageDescription</key>
+  <string>${PRODUCT_NAME} Camera Usage</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

@@ -7,12 +7,12 @@ import {StyleSheet} from 'react-native';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 
-import HomeScreen from '../screens/HomeScreen';
-import Card from '../screens/Card';
-import Help from '../screens/Help';
 import Login from '../screens/login/Login';
 import AuthLoadingScreen from '../screens/AuthLoadingScreen';
-import Bars from '../screens/Bars';
+import HomeNavigation from './HomeNavigation/HomeNavigation';
+import CardNavigation from './CardNavigation/CardNavigation';
+import HelpNavigation from './HelpNavigation/HelpNavigation';
+import ProfileNavigation from './ProfileNavigation/ProfileNavigation';
 
 const LoginNavigator = createStackNavigator({
   Login: {
@@ -38,15 +38,17 @@ const LoginNavigator = createStackNavigator({
 const ScreenNavigator = createBottomTabNavigator(
   {
     Home: {
-      screen: createStackNavigator({Home: HomeScreen}),
+      screen: HomeNavigation,
     },
     Card: {
-      screen: createStackNavigator({Card: Card}),
+      screen: CardNavigation,
     },
     Help: {
-      screen: createStackNavigator({Help: Help}),
+      screen: HelpNavigation,
     },
-    Bars: createStackNavigator({Bars: Bars}),
+    Profile: {
+      screen: ProfileNavigation,
+    },
   },
   {
     defaultNavigationOptions: ({navigation}) => ({
@@ -66,8 +68,8 @@ const ScreenNavigator = createBottomTabNavigator(
           return <IconComponent name={'home'} size={25} color={tintColor} />;
         } else if (routeName === 'Card') {
           return <IconComponent name={'vcard'} size={25} color={tintColor} />;
-        } else if (routeName === 'Bars') {
-          return <IconComponent name={'bars'} size={25} color={tintColor} />;
+        } else if (routeName === 'Profile') {
+          return <IconComponent name={'user'} size={25} color={tintColor} />;
         } else {
           return <Icon name={'help'} size={25} color={tintColor} />;
         }

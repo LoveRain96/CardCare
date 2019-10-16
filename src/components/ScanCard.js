@@ -1,18 +1,32 @@
 import React, {useCallback, useEffect} from 'react';
-import {CardIOView, CardIOUtilities} from 'react-native-awesome-card-io';
-import {View} from 'react-native';
+import {View, TouchableOpacity, Text, Platform, Alert} from 'react-native';
+import {CardIOModule, CardIOUtilities} from 'react-native-awesome-card-io';
 
 const ScanCard = () => {
   useEffect(() => {
-    CardIOUtilities.preload();
+    if (Platform.OS === 'ios') {
+      CardIOUtilities.preload();
+    }
   }, []);
-  const didScanCard = useCallback(card => {
-    console.log(card);
+
+  const scanCard = useCallback(() => {
+    Alert.alert('card', 'render');
+    CardIOModule.scanCard()
+      .then(cardInfo => {
+        Alert.alert('card', cardInfo);
+        // the scanned card
+      })
+      .catch(() => {
+        Alert.alert('card', 'error');
+        // the user cancelled
+      });
   }, []);
 
   return (
     <View>
-      <CardIOView didScanCard={didScanCard} style={{flex: 1}} />
+      <TouchableOpacity onPress={scanCard}>
+        <Text>Scan card!</Text>
+      </TouchableOpacity>
     </View>
   );
 };

@@ -1,38 +1,16 @@
-import React, {useCallback} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {connect} from 'react-redux';
-import {logOut} from '../actions/authAction';
-function Help(props) {
-  const handleLogout = useCallback(async () => {
-    props.logOut();
-    props.navigation.navigate('Login');
-  }, [props]);
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+const Help = props => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.logOutButton} onPress={handleLogout}>
-        <Text>Logout</Text>
-      </TouchableOpacity>
+      <Text>Logout</Text>
     </View>
   );
-}
+};
 Help.navigationOptions = {
   title: 'Card Care',
 };
-const mapStateToProps = state => {
-  return {};
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    logOut: () => {
-      dispatch(logOut());
-    },
-  };
-};
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Help);
+export default Help;
 
 const styles = StyleSheet.create({
   container: {

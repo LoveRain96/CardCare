@@ -1,23 +1,29 @@
-import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import React, {useCallback} from 'react';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
 
-const InputSearch = (props: {customIcon?: Object}) => {
+const InputSearch = props => {
+  const onPress = useCallback(() => {
+    props.onOpenModal();
+  }, [props]);
   return (
-    <View>
-      <Text style={styles.body}>
+    <View style={styles.body}>
+      <TouchableOpacity onPress={onPress}>
         <Ionicons
-          style={[styles.icon, props.customIcon]}
+          // style={[styles.icon, props.customIcon]}
           name={'search'}
           size={25}
         />
-      </Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const styles = StyleSheet.create({
   body: {
     paddingRight: 15,
+  },
+  header: {
+    alignItems: 'center',
   },
   icon: {},
 });
